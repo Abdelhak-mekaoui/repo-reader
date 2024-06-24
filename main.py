@@ -10,10 +10,10 @@ from file_processing import clone_github_repo, load_and_index_files
 from questions import ask_question, QuestionContext
 
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
+#OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = "sk-proj-......................................."
 def main():
-    github_url = input("Enter the GitHub URL of the repository: ")
+    github_url = input("https://github.com/Abdelhak-mekaoui/my-chat-ui.git")
     repo_name = github_url.split("/")[-1]
     print("Cloning the repository...")
     with tempfile.TemporaryDirectory() as local_path:
